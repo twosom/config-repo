@@ -13,7 +13,7 @@ spring:
         format_sql: true
   datasource:
     url: jdbc:mysql://localhost:3306/spring_cloud
-    username: root
+    username: '{cipher}AQBCUGCngWMeleFG2TsBCG3McT1PsdqpcX7kpgcTyqOMgtnRmx3m0pqRlpMKrVHojpeqESc1sOy9gmG8shKYgGZMwqpNSsFC23gya4MD+XI8qVQc/ThexsqBXPwkDX8PjvOo+fnRrBPpKTbDld6WIXXB69/Cci+fckkeHEO89YIblUYpQqPaZcqZAiYT4hIkTMpyo92La2hZt/Zl5xKnokWH/uS7f2ch9uLT7pbnLhp5S73LTQzHdrwxxHYPV8+9rel66az0WX/uGFhYBGrMlZx7jROsK+QWuvuthtCbqzchcDJAZGiC6pzWKDsAxdFuEYbklQyKN8CwN2LIatTEVIueTWQkDvkIu3RsdfLn424xCREyzJbQ7fJ2/s7Tf3HTkYI='
     password:
     testWhileIdle: true
     validationQuery: SELECT 1
