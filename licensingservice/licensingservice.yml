@@ -1,0 +1,29 @@
+example:
+  property: I AM IN THE DEFAULT
+
+spring:
+  database:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+#    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_cloud
+    username: root
+    password:
+    testWhileIdle: true
+    validationQuery: SELECT 1
+logging.level:
+  org.hibernate.SQL: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: env
+
+
