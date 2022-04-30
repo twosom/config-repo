@@ -1,29 +1,22 @@
 example:
-  property: I AM IN THE DEFAULT
-
+  property: "I AM IN THE DEFAULT"
 spring:
-  database:
-    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
+    database: mysql
+    show-sql: true
     hibernate:
-      ddl-auto: update
-#    show-sql: true
+      ddl-auto: create
     properties:
       hibernate:
-        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  sql:
+    init:
+      platform: mysql
   datasource:
-    url: jdbc:mysql://localhost:3306/spring_cloud
-    username: '{cipher}AQBCUGCngWMeleFG2TsBCG3McT1PsdqpcX7kpgcTyqOMgtnRmx3m0pqRlpMKrVHojpeqESc1sOy9gmG8shKYgGZMwqpNSsFC23gya4MD+XI8qVQc/ThexsqBXPwkDX8PjvOo+fnRrBPpKTbDld6WIXXB69/Cci+fckkeHEO89YIblUYpQqPaZcqZAiYT4hIkTMpyo92La2hZt/Zl5xKnokWH/uS7f2ch9uLT7pbnLhp5S73LTQzHdrwxxHYPV8+9rel66az0WX/uGFhYBGrMlZx7jROsK+QWuvuthtCbqzchcDJAZGiC6pzWKDsAxdFuEYbklQyKN8CwN2LIatTEVIueTWQkDvkIu3RsdfLn424xCREyzJbQ7fJ2/s7Tf3HTkYI='
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/eagle_eye_local
+    username: root
     password:
-    testWhileIdle: true
-    validationQuery: SELECT 1
-logging.level:
-  org.hibernate.SQL: debug
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: env, refresh
-
-
+    dbcp2:
+      test-while-idle: true
+      validation-query: "SELECT 1"
