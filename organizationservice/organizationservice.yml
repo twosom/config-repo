@@ -1,0 +1,22 @@
+example:
+  property: "I AM IN THE DEFAULT HELLO"
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  sql:
+    init:
+      platform: mysql
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: "{cipher}cec9a070ad8fa2213447795acbb02f2f0b6bb331bce42a88f1adc866de9d3473dc3c02882bba1991ce3ace1142857aee5c82681d0fd1383255d130a4b04c6439"
+    username: root
+    password:
+    dbcp2:
+      test-while-idle: true
+      validation-query: "SELECT 1"
