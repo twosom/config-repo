@@ -14,7 +14,7 @@ spring:
       platform: mysql
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/eagle_eye_local
+    url: "{cipher}eaa7b1133e4776865cd7b47148dd8b6ad00ab3359fe98ad24bd6b8acdbfce210c2336271d0772bb8723b21e0d1f7c85d93567d977aa7e6a69f9a96625b760f4b"
     username: root
     password:
     dbcp2:
