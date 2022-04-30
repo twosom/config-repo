@@ -14,7 +14,7 @@ spring:
       platform: mysql
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: '{cipher}eaa7b1133e4776865cd7b47148dd8b6ad00ab3359fe98ad24bd6b8acdbfce210c2336271d0772bb8723b21e0d1f7c85d93567d977aa7e6a69f9a96625b760f4b'
+    url: "{cipher}cec9a070ad8fa2213447795acbb02f2f0b6bb331bce42a88f1adc866de9d3473dc3c02882bba1991ce3ace1142857aee5c82681d0fd1383255d130a4b04c6439"
     username: root
     password:
     dbcp2:
